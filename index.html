@@ -1,0 +1,160 @@
+
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#080808">
+    <title>HUQUQ BILIMDONI</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <header>
+        <div class="logo">⚖ HUQUQ BILIMDONI</div>
+        <div class="header-text">HUQUQIY BILIMLAR SINOVI</div>
+    </header>
+
+    <main id="startScreen" class="screen active">
+        <div class="hero-icon">⚖</div>
+        <div class="tag">BILIM — ENG KATTA KUCH</div>
+        <h1>HUQUQ BILIMDONI</h1>
+        <p class="description">
+            O‘zbekiston qonunchiligi va huquqiy bilimlaringizni
+            sinab ko‘ring. Har bir testda sizni yangi savollar kutmoqda!
+        </p>
+
+        <div class="info-grid">
+            <div class="info-card">
+                <span>📚</span>
+                <h3>100+</h3>
+                <p>Savollar bazasi</p>
+            </div>
+            <div class="info-card">
+                <span>❓</span>
+                <h3>10 ta</h3>
+                <p>Har bir testda</p>
+            </div>
+            <div class="info-card">
+                <span>🏆</span>
+                <h3>100 ball</h3>
+                <p>Maksimal natija</p>
+            </div>
+        </div>
+
+        <div class="features">
+            <p>✓ Har safar yangi tasodifiy savollar</p>
+            <p>✓ Har savolga 15 soniya</p>
+            <p>✓ Darhol javoblar tahlili</p>
+            <p>✓ Natijalarni hisoblash</p>
+        </div>
+
+        <button id="startBtn" class="main-btn">
+            TESTNI BOSHLASH <span>→</span>
+        </button>
+    </main>
+
+    <main id="quizScreen" class="screen">
+
+        <div class="quiz-top">
+            <div>
+                <div class="question-number">
+                    SAVOL <span id="currentNumber">1</span> / 10
+                </div>
+                <div class="category">HUQUQSHUNOSLIK</div>
+            </div>
+
+            <div class="timer" id="timer">
+                <span>⏱</span>
+                <span id="time">15</span>
+            </div>
+        </div>
+
+        <div class="progress-container">
+            <div class="progress-bar" id="progressBar"></div>
+        </div>
+
+        <div class="question-card">
+            <div class="level" id="level">O‘RTA DARAJA</div>
+
+            <h2 id="question">Savol matni</h2>
+
+            <div class="answers" id="answers"></div>
+
+            <div id="feedback" class="feedback"></div>
+        </div>
+
+        <div class="navigation">
+            <button id="prevBtn" class="secondary-btn">
+                ← ORQAGA
+            </button>
+
+            <button id="nextBtn" class="main-btn" disabled>
+                KEYINGI →
+            </button>
+        </div>
+
+        <div class="bottom-info">
+            <span>⚖ HUQUQ BILIMDONI</span>
+            <span id="answeredCount">Javoblar: 0/10</span>
+        </div>
+
+    </main>
+
+    <main id="resultScreen" class="screen">
+
+        <div class="result-icon" id="resultIcon">🏆</div>
+        <div class="tag">SIZNING NATIJANGIZ</div>
+
+        <h1>TEST YAKUNLANDI!</h1>
+
+        <p class="description" id="resultMessage">
+            Natijangiz tayyor!
+        </p>
+
+        <div class="score-circle">
+            <div id="score">0</div>
+            <span>100 balldan</span>
+        </div>
+
+        <div class="result-grid">
+            <div class="result-card">
+                <span class="green">✓</span>
+                <h2 id="correctCount">0</h2>
+                <p>To‘g‘ri</p>
+            </div>
+
+            <div class="result-card">
+                <span class="red">✕</span>
+                <h2 id="wrongCount">0</h2>
+                <p>Noto‘g‘ri</p>
+            </div>
+
+            <div class="result-card">
+                <span class="gold">★</span>
+                <h2 id="percent">0%</h2>
+                <p>Natija</p>
+            </div>
+        </div>
+
+        <h2 class="review-title">JAVOBLAR TAHLILI</h2>
+        <div id="reviewList" class="review-list"></div>
+
+        <button id="restartBtn" class="main-btn">
+            ↻ YANGI TEST BOSHLASH
+        </button>
+
+    </main>
+
+    <footer>
+        <p>© 2026 HUQUQ BILIMDONI</p>
+        <p>Loyiha muallifi: AKRAMJONOVA JADRA MARATOVNA</p>
+    </footer>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
